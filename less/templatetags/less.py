@@ -112,7 +112,7 @@ def less(path):
         filesystem_encoding = sys.getfilesystemencoding() or sys.getdefaultencoding()
         encoded_full_path = full_path.encode(filesystem_encoding)
 
-    if not os.path.exists(output_path):
+    if not os.path.exists(output_path) or not LESS_USE_CACHE:
         compile_less(encoded_full_path, output_path, path)
 
         # Remove old files
