@@ -107,7 +107,7 @@ Settings
     Controls the directory inside ``LESS_ROOT`` that compiled files will be written to. Default: ``"LESS_CACHE"``.
 
 ``LESS_USE_CACHE``
-    Whether to use cache for inline styles. Default: ``True``.
+    Whether to use cache for styles. Default: ``True``. You can set ``LESS_USE_CACHE = not DEBUG`` in your settings, so the less code will be compiled every load just in development process.
 
 ``LESS_CACHE_TIMEOUT``
     Cache timeout for inline styles (in seconds). Default: 30 days.
