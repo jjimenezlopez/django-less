@@ -3,6 +3,7 @@ dist
 *.pyc
 *.egg-info
 *.egg
+*.swp
 .idea
 virtualenv
 less/tests/media/LESS_CACHE
